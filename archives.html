@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="english">
 <head>
-        <meta charset="utf-8" />
-        <title>NumericalNinja</title>
-        <link rel="stylesheet" href="https://masdeseiscaracteres.github.io/numericalninja/theme/css/main.css" />
-        <link href="https://masdeseiscaracteres.github.io/numericalninja/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="NumericalNinja Atom Feed" />
+  <meta charset="utf-8" />
+  <title>NumericalNinja</title>
+  <meta name="author" content="masdeseiscaracteres" />
+  <base href="">
+  <link rel="stylesheet" type="text/css" href="/theme/tufte-css/tufte.css" />
+  <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+  <!--
+  Original link to favicon
+  <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+  -->
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <!-- <link rel="mask-icon" href="/favicon.svg" color="#50c878" /> -->
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+  <!-- OpenGraph Info -->
+  <meta property="og:title" content="NumericalNinja"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:url" content=""/>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+        TeX: {
+          Macros: {
+            RR: "{\\mathbb{R}}",
+            argmin: "{\\mathop{\\mathrm{arg\\,min}}}",
+            bold: ["{\\bf #1}",1]
+          }
+        },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://masdeseiscaracteres.github.io/numericalninja/">NumericalNinja </a></h1>
-                <nav><ul>
-                    <li><a href="https://masdeseiscaracteres.github.io/numericalninja/category/posts.html">posts</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<body>
+<header>
+  <h1 class="websitetitle"><a href="">NumericalNinja</a></h1>
+  <nav class="navmenu" id="navmenu">
+    <li><a class="navitemlink" href="/archives.html">Archive</a></li>
+   </nav>
+ </header>
 <section id="content" class="body">
 <h1>Archives for NumericalNinja</h1>
 
 <dl>
+    <dt>Mon 23 October 2017</dt>
+    <dd><a href="/markdown.html">My first markdown post</a> posts</dd>
     <dt>Wed 08 June 2016</dt>
-    <dd><a href="https://masdeseiscaracteres.github.io/numericalninja/fast-returns.html">Calculating financial returns (the fast way)</a></dd>
+    <dd><a href="/fast-returns.html">Calculating financial returns (the fast way)</a> posts</dd>
 </dl>
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://masdeseiscaracteres.github.io/numericalninja/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
+<footer>
+  <p>Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+</footer>
 </body>
 </html>
